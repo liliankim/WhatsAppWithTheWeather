@@ -6,15 +6,23 @@
 var searchBox = document.querySelector(".enterCity");
 var enterButton = document.querySelector(".searchButton");
 var weatherParams = document.querySelector("weatherParams");
-var cities = document.querySelector("cities");
-var date = document.querySelector("temperature");
-var conditions = document.querySelector("conditions");
-var temperature = document.querySelector("temperature");
-var wspeed = document.querySelector("wspeed");
-var humidity = document.querySelector("humidity");
+var cities = document.querySelector(".cities");
+var date = document.querySelector(".temperature");
+var conditions = document.querySelector(".conditions");
+var temperature = document.querySelector(".temperature");
+var wspeed = document.querySelector(".wspeed");
+var humidity = document.querySelector(".humidity");
 
 function searchBox (event) {
     event.preventDefault();
+}
+
+var getWeatherParams = function(){
+    var weatherParams = https://api.openweathermap.org/data/2.5/weather?q=${searchBox.value}&appid=de57a199ab57eec1fb38cee41c82b20b&units=imperial`
+    fetch(Url)
+    .then(function(response){
+        return response.json()
+    })
 }
 
 searchBox.addEventListener ("click", search);
