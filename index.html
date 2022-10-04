@@ -2,6 +2,7 @@
 <html lang="en">
 
 
+
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +13,30 @@
 </head>
 
 <body>
-
+<!-- This section is the header and will include the current weather -->
     <main class="flex-row justify-space-between">
     <div class = "container"></div>
     <div class="row">
+        <div class="col-md-12 styling" id="top">
+        <h3> Weather Dashboard</h3>
+        <h2>Current Weather</h2>
+    </div>
 
-
-        <div class="col-md-12 styling" id="top">column 1</div>
-
-        <div class="col-md-4 styling" id="left"> left 
+    <!--This is the blue section: includes search bar and search history-->
+        <div class="col-md-4 styling" id="left">  
             <div class="form-group">
-                <label for="City">Enter City</label>
-                <input type="entercity" class="form-control" id="exampleInputPassword1" placeholder="Enter City">
-            <button>Get Weather</button>
+                <label for="City" >Look Up a City</label>
+                <input class="enterCity" id="findCity" placeholder="New York">
+            <button class = "searchButton">Get Weather</button>
                 </div>
 
 
         <H3> Previous Searches</H3>
         </div>
 
-
-        <div class="col-md-8 styling" id="right"><br>Right
+<!--This section will be for the search results: includes future weather-->
+        <div class="col-md-8 styling" id="right"><br>
+            <h3>5 Day Weather Forecast</h3>
         
         
         </div> 
