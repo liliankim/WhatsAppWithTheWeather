@@ -5,6 +5,17 @@
 
 var searchBox = document.querySelector(".enterCity");
 var enterButton = document.querySelector(".searchButton");
+var weatherParams = document.querySelector("weatherParams");
+var cities = document.querySelector("cities");
+var date = document.querySelector("temperature");
+var conditions = document.querySelector("conditions");
+var temperature = document.querySelector("temperature");
+var wspeed = document.querySelector("wspeed");
+var humidity = document.querySelector("humidity");
+
+function searchBox (event) {
+    event.preventDefault();
+}
 
 searchBox.addEventListener ("click", search);
 function search () {
