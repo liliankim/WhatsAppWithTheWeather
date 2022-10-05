@@ -18,7 +18,7 @@ function searchBox (event) {
 }
 
 var getWeatherParams = function(){
-    var weatherParams = https://api.openweathermap.org/data/2.5/weather?q=${searchBox.value}&appid=de57a199ab57eec1fb38cee41c82b20b&units=imperial`
+    var weatherParams = `https://api.openweathermap.org/data/2.5/weather?q=${searchBox.value}&appid=de57a199ab57eec1fb38cee41c82b20b&units=imperial`
     fetch(Url)
     .then(function(response){
         return response.json()
